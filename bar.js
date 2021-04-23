@@ -6,13 +6,23 @@ var apDue = [2535453, 1994062, 2046836, 1781241, 2230542,2778134, 2364457, 23402
 var trace1 = {
   x: month,
   y: ar,
-  type: "bar"
+  type: "bar",
+  name: '2020 Receivables',
+  marker: {
+    color: 'rgb(49,130,189)',
+    opacity: 0.7,
+  }
 };
 
 var trace2 = {
   x: month,
   y: apDue,
-  type: "bar"
+  type: "bar",
+  name: '2020 Payables',
+  marker: {
+    color: 'rgb(204,204,204)',
+    opacity: 0.5
+  }
 };
 
 // Create the data array for the plot
@@ -22,8 +32,13 @@ var data = [trace1, trace2];
 var layout = {
   title: "AP vs AR 2020",
   xaxis: { title: "Month"},
-  yaxis: { title: "Amount"}
+  yaxis: { title: "Amount",
+  tickformat: "$,.2f"}
+  
+
 };
+
+
 
 // Plot the chart to a div tag with id "bar-plot"
 Plotly.newPlot("bar-plot", data, layout);
