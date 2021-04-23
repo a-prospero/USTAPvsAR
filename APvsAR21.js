@@ -22,8 +22,7 @@ var arDue = {
     y: [3832595, 3432667, 1239205],
     mode: 'lines+markers+text',
     name: '2021 Processed AR',
-    type: "scatter",
-    tickformat: "$,.2f"
+    type: "scatter"
   };
   
   // Create our second trace
@@ -32,8 +31,7 @@ var arDue = {
     y: [2135247, 1913709, 2489292],
     mode: 'lines+markers+text',
     name: '2021 Processed AP',
-    type: "scatter",
-    tickformat: "$,.2f"
+    type: "scatter"
   };
 
 
