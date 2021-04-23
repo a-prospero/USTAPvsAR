@@ -34,11 +34,7 @@ var layout = {
   xaxis: { title: "Month"},
   yaxis: { title: "Amount",
   tickformat: "$,.2f"}
-  
-
-};
-
-
+  };
 
 // Plot the chart to a div tag with id "bar-plot"
 Plotly.newPlot("bar-plot", data, layout);
